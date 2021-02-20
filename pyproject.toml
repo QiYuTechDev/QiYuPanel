@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "panel"
+version = "0.1.0"
+description = "Linux Panel From QiYuTech"
+authors = ["dev <dev@qiyutech.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+# Web Framework
+django = ">=3.1,<3.2"
+# Django WebSocket Support
+channels = ">3.0,<3.1"
+
+# aps scheduler
+apscheduler = ">=3.0,<4.0"
+
+# for log
+django-structlog = ">=2.1,<2.2"
+
+# for oauth2 support
+django-oauth-toolkit = ">=1.4,<1.5"
+
+# for oauth2
+# https://django-oauth-toolkit.readthedocs.io/
+django-cors-middleware = ">=1.5,<2"
+
+# OTP support
+django-otp = ">1.0,<1.1"
+# OTP QR image
+qrcode = ">=6.1,<7"
+pillow = ">=8.0,<9"
+
+# API 类型定义
+pydantic = ">=1.7,<2.0"
+# API for Django
+django-ninja = ">=0.11,<0.12"
+
+# 依赖
+django-div-node = ">=0.1.1,<0.2"
+django-qiyu-utils = ">=0.3,<0.4"
+dj-qiyu-tpl = ">=0.3,<0.4"
+
+# Docker API
+docker = ">=4.4,<4.5"
+
+# LDAP Server 支持
+ldaptor = ">=21,<22"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pylama = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
