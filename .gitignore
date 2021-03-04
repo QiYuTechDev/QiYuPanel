@@ -1,5 +1,7 @@
 .idea
+media
 poetry.lock
+demo.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
